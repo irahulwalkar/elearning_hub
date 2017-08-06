@@ -1,0 +1,23 @@
+{% extends 'blog/base.html' %}
+
+{% load staticfiles %}
+
+{% block content %}	
+		<h3>Topics</h3>
+		<hr>
+		<div class="topic">
+		{% if user.is_authenticated %}
+			{% if topics %}
+			<ul >
+			{% for topic in topics %}
+				<h2><li><a href="{% url 'post_list' pk=topic.pk %}">{{ topic.name }}</a></li></h2>
+			{% endfor %}
+			</ul>
+			{% else %}
+				<strong>There are no topics present.</strong>
+			{% endif %}		
+		{% else %}
+			<a href="{% url 'post_list' pk=topic.pk %}">{{ topic.name }}</li>
+		{% endif %}
+		</div>
+{% endblock %}

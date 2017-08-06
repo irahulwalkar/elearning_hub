@@ -1,0 +1,29 @@
+.page-header {
+    background-color: #E1DBC6;
+    margin-top: 0;
+    padding: 5px 5px 5px 10px;
+}
+
+.page-header h2, .page-header h2 a, .page-header h2 a:visited, .page-header h2 a:active {
+    color: #E87E86;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #E87E86;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+    height: 30%;
+    margin-bottom: 10px;
+}
+
+#id_topic {
+	position: relative;
+	display: inline-block;
+}
