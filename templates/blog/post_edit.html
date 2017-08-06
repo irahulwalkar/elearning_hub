@@ -2,7 +2,7 @@
 
 {% block content %}
     <h1>{{ title }}</h1>
-    <form method="POST" action="">
+    <form method="POST" action="" class="post-form">
     	{% csrf_token %}
     	{{ form.as_p }}
     	<input class="btn btn-success" type="submit" value='Submit'>
